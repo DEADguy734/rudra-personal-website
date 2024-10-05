@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rudra's Personal Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background: #35424a;
+            padding: 10px;
+        }
+        nav a {
+            color: #ffffff;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        section {
+            padding: 20px;
+            max-width: 900px;
+            margin: auto;
+            background: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #35424a;
+            color: #ffffff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .skills, .blog-posts {
+            list-style-type: none;
+            padding: 0;
+        }
+        .skills li, .blog-posts li {
+            background: #e2e2e2;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 4px;
+        }
+        .testimonials {
+            background: #e2f7e2;
+            padding: 10px;
+            border-left: 4px solid #4caf50;
+            margin: 10px 0;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        input, textarea {
+            margin: 5px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background: #35424a;
+            color: white;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background: #4caf50;
+        }
+        .blog {
+            margin-bottom: 20px;
+        }
+        .blog h3 {
+            color: #35424a;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to Rudra's Personal Website</h1>
+</header>
+
+<nav>
+    <a href="#about">About Me</a>
+    <a href="#hobbies">Hobbies</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#blog">Blog</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>Hi! I'm Rudra, a passionate student dedicated to learning and personal growth. I thrive on challenges and enjoy exploring new ideas that fuel my creativity and knowledge.</p>
+</section>
+
+<section id="hobbies">
+    <h2>Hobbies</h2>
+    <p>One of my favorite hobbies is playing cricket, where I enjoy both the thrill of competition and the camaraderie of teamwork. I also love:</p>
+    <ul>
+        <li>Playing video games, especially strategy and adventure games.</li>
+        <li>Exploring new technologies and gadgets.</li>
+        <li>Reading books on science fiction and technology.</li>
+        <li>Traveling and experiencing different cultures.</li>
+    </ul>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+    <ul class="skills">
+        <li>Web Development</li>
+        <li>Graphic Design</li>
+        <li>Video Editing</li>
+        <li>Content Creation</li>
+        <li>Communication Skills</li>
+        <li>Problem Solving</li>
+        <li>Data Analysis</li>
+        <li>Team Leadership</li>
+    </ul>
+</section>
+
+<section id="projects">
+    <h2>My Projects</h2>
+    <p>I have created various projects, including:</p>
+    <ul>
+        <li>A website for local businesses to enhance their online presence.</li>
+        <li>Gaming tutorials on my YouTube channel.</li>
+        <li>Graphic design portfolios for fellow students.</li>
+    </ul>
+    <div class="gallery">
+        <h3>Gallery</h3>
+        <img src="https://via.placeholder.com/800x400" alt="Project Image 1">
+        <img src="https://via.placeholder.com/800x400" alt="Project Image 2">
+    </div>
+</section>
+
+<section id="testimonials">
+    <h2>Testimonials</h2>
+    <div class="testimonials">
+        <p><strong>John Doe:</strong> "Rudra is a dedicated individual who brings creativity and passion to every project!"</p>
+    </div>
+    <div class="testimonials">
+        <p><strong>Jane Smith:</strong> "Working with Rudra is always a pleasure. His enthusiasm is contagious!"</p>
+    </div>
+</section>
+
+<section id="blog">
+    <h2>Blog</h2>
+    <div class="blog">
+        <h3>My Journey in Web Development</h3>
+        <p>In this post, I’ll share my journey in web development, from the first line of code I wrote to the projects I'm working on now.</p>
+    </div>
+    <div class="blog">
+        <h3>Why I Love Cricket</h3>
+        <p>Cricket is not just a sport for me; it’s a passion that brings friends together. Here’s why I love it.</p>
+    </div>
+    <div class="blog">
+        <h3>Exploring New Technologies</h3>
+        <p>As a tech enthusiast, I enjoy staying updated on the latest innovations. Here's what I've discovered recently.</p>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+    <p>If you’d like to get in touch, feel free to reach out through my YouTube channel: <a href="https://www.youtube.com/@logitechgamer492" target="_blank">@logitechgamer492</a>.</p>
+    <h3>Or send me a message:</h3>
+    <form action="#" method="post">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <input type="submit" value="Send Message">
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2024 Rudra. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
+
+
